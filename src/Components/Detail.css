@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "itc_avant_garde_gothic_stdBk";
+  src: url("../itc_avant_garde_gothic_std_book-webfont.woff2") format("woff2"), url("../itc_avant_garde_gothic_std_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.detail {
+  color: white;
+  opacity: 0;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+  animation: fader 0.6s linear forwards;
+}
+.detail .one {
+  width: 85vw;
+  max-width: 1200px;
+  margin: 0 auto 96px;
+  border-bottom: 2px solid white;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.detail .one aside {
+  width: 38vw;
+  max-width: 550px;
+}
+.detail .one .left h1 {
+  max-width: 520px;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 104px;
+  margin-bottom: 80px;
+}
+.detail .one .left .roll {
+  margin-bottom: 45px;
+}
+.detail .one .left div {
+  display: flex;
+}
+.detail .one .left div .highlight {
+  border-bottom: 1px solid white;
+}
+.detail .one .left div p, .detail .one .left div .tools {
+  width: 190px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.detail .one .left div p article, .detail .one .left div .tools article {
+  display: flex;
+  flex-direction: column;
+}
+.detail .one .left div p article :last-child::after, .detail .one .left div .tools article :last-child::after {
+  margin-left: 1px;
+  content: "";
+}
+.detail .one .left div p article span, .detail .one .left div .tools article span {
+  margin-right: 7px;
+  margin-bottom: 8px;
+}
+.detail .one .left div p article span::after, .detail .one .left div .tools article span::after {
+  margin-left: 1px;
+  content: ",";
+}
+.detail .one .left div p span, .detail .one .left div .tools span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+}
+.detail .one .left div p .big, .detail .one .left div .tools .big {
+  color: #fcea4e;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.detail .one .right {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.detail .one .right p {
+  margin-bottom: 30px;
+}
+.detail .two {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  max-width: 1200px;
+  margin: auto;
+}
+.detail .two img, .detail .two video {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: inherit;
+  margin-top: 32px;
+}
+.detail .two h2,
+.detail .two p {
+  text-align: center;
+  padding: 0px 150px;
+  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.detail .two h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.24px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.detail .footer {
+  width: 85vw;
+  max-width: 1200px;
+  min-height: 30px;
+  margin: 53px auto 0;
+}
+.detail .footer .next {
+  float: right;
+}
+.detail .footer span {
+  font-size: 21px;
+  background-color: #222222;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 21px;
+  transition: opacity 0.4s;
+  padding: 8px 27px;
+}
+.detail .footer span:hover {
+  opacity: 0.67;
+}
+
+@media screen and (max-width: 1115px) {
+  .detail .one .left h1 {
+    font-size: 72px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .detail .one {
+    flex-direction: column;
+  }
+  .detail .one .right {
+    width: 83vw;
+    margin-top: 64px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    font-size: 16px;
+  }
+  .detail .one .left h1 {
+    margin-bottom: 61px;
+    font-size: 90px;
+  }
+  .detail .one .left div {
+    flex-direction: column;
+  }
+  .detail .one .left div p, .detail .one .left div .tools {
+    width: 84vw;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+  }
+  .detail .one .left div p article, .detail .one .left div .tools article {
+    flex-direction: row;
+  }
+  .detail .one .left div p article :last-child::after, .detail .one .left div .tools article :last-child::after {
+    margin-left: 1px;
+    content: "";
+  }
+  .detail .one .left div p article span, .detail .one .left div .tools article span {
+    margin-right: 7px;
+  }
+  .detail .one .left div p article span::after, .detail .one .left div .tools article span::after {
+    margin-left: 1px;
+    content: ",";
+  }
+  .detail .two p, .detail .two h2 {
+    padding: 0 50px;
+  }
+  .detail .footer span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .detail .one {
+    margin: 0 auto 33px;
+    padding: 30px 0;
+  }
+  .detail .one .left h1 {
+    font-size: 34px;
+    margin-bottom: 33px;
+    width: -moz-max-content;
+    width: max-content;
+    line-height: 40px;
+  }
+  .detail .one .left div p {
+    padding-bottom: 15px;
+  }
+  .detail .one .left .roll {
+    margin-bottom: 7px;
+  }
+  .detail .one .right {
+    margin-top: 25px;
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .detail .one .right p {
+    margin-bottom: 20px;
+  }
+  .detail .two img, .detail .two video {
+    margin-top: 12px;
+  }
+  .detail .two h2,
+  .detail .two p {
+    padding: 0 22px;
+  }
+  .detail .footer span {
+    padding: 8px 14px;
+  }
+}/*# sourceMappingURL=Detail.css.map */

@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+.contact {
+  color: white;
+  opacity: 0;
+  animation: fader 0.6s linear forwards;
+  max-width: 1440px;
+  margin: auto;
+}
+.contact .one {
+  margin-top: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  min-height: 500px;
+  animation: fader 0.4s linear forwards 0.3s;
+}
+.contact .one span {
+  text-align: center;
+  font-size: 150px;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.contact .one img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 52vw;
+  max-width: 719px;
+  position: relative;
+  bottom: 100px;
+}
+.contact .two {
+  display: flex;
+  width: 84vw;
+  max-width: 1200px;
+  margin: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Raleway", sans-serif;
+}
+.contact .two h2 {
+  color: #fcea4e;
+  font-size: 86px;
+  max-width: 600px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+.contact .two p {
+  margin-bottom: 59px;
+  font-size: 20px;
+  max-width: 550px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+.contact .two aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .two aside input {
+  max-width: 575px;
+  width: 40vw;
+  border-radius: 10px;
+  border: 1px solid #303030;
+  background-color: #1f2324;
+  margin-bottom: 48px;
+  padding: 35px 30px;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contact .two aside input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contact .two aside input::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contact .two aside textarea {
+  width: inherit;
+  border-radius: 10px;
+  border: 1px solid #303030;
+  background-color: #1f2324;
+  margin-bottom: 48px;
+  padding: 35px 30px;
+  color: white;
+  flex-grow: 1;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  resize: none;
+}
+.contact .two aside textarea::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contact .two aside textarea::placeholder {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.contact .two a {
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 2px solid #fcea4e;
+  padding: 15px 50px;
+  color: #fcea4e;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+  transition: opacity 0.4s;
+}
+.contact .two a:hover {
+  opacity: 0.67;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact .one {
+    min-height: 200px;
+  }
+  .contact .one img {
+    bottom: 75px;
+  }
+  .contact .two h2 {
+    font-size: 70px;
+    line-height: 72px;
+  }
+  .contact .two p {
+    font-size: 17px;
+    line-height: 25x;
+    margin-bottom: 22px;
+  }
+  .contact .two aside {
+    margin-top: 35px;
+    flex-direction: column;
+    width: 82vw;
+  }
+  .contact .two aside input, .contact .two aside textarea {
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 28px;
+    padding: 13px 37px;
+    max-width: 1000px;
+    font-size: 16px;
+  }
+  .contact .two aside input::-moz-placeholder, .contact .two aside textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact .two aside input::placeholder, .contact .two aside textarea::placeholder {
+    font-size: 16px;
+  }
+  .contact .two a {
+    margin-top: 0px;
+    font-size: 14px;
+    padding: 10px 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact .one {
+    margin-top: 27px;
+    min-height: 50px;
+  }
+  .contact .one span {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .contact .one img {
+    bottom: 30px;
+  }
+  .contact .two {
+    width: 90vw;
+  }
+  .contact .two h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 40px;
+  }
+  .contact .two p {
+    font-size: 10px;
+    line-height: 14px;
+    max-width: 270px;
+    margin-bottom: 10px;
+  }
+  .contact .two aside input, .contact .two aside textarea {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+  .contact .two aside input::-moz-placeholder, .contact .two aside textarea::-moz-placeholder {
+    font-size: 10px;
+  }
+  .contact .two aside input::placeholder, .contact .two aside textarea::placeholder {
+    font-size: 10px;
+  }
+  .contact .two a {
+    padding: 5px 27px;
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=Contact.css.map */

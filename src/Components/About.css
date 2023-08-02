@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+.about {
+  color: white;
+  max-width: 1440px;
+}
+.about .one {
+  margin-top: 77px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  min-height: 500px;
+  animation: fader 0.4s linear forwards 0.3s;
+}
+.about .one span {
+  text-align: center;
+  font-size: 150px;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.about .one img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 52vw;
+  max-width: 719px;
+  position: relative;
+  bottom: 100px;
+}
+.about .two {
+  max-width: 1240px;
+  margin: auto;
+  margin-bottom: 157px;
+}
+.about .two aside,
+.about .two article {
+  display: flex;
+  width: 82vw;
+  max-width: 1400px;
+  margin: auto;
+  justify-content: space-between;
+}
+.about .two aside img,
+.about .two article img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 27vw;
+}
+.about .two aside div,
+.about .two article div {
+  display: flex;
+  flex-direction: column;
+}
+.about .two article {
+  margin-top: 52px;
+  justify-content: space;
+  flex-wrap: wrap;
+}
+.about .two article p {
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0.19px;
+}
+.about .two article .e_2 {
+  order: 3;
+}
+.about .two article .e_3 {
+  order: 2;
+}
+.about .two article .e_4 {
+  order: 4;
+}
+.about .three {
+  width: 85vw;
+  margin: auto;
+  max-width: 1240px;
+}
+.about .three h5 {
+  margin-bottom: 42px;
+  font-size: 19px;
+  font-style: normal;
+  display: inline;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 10px 16px;
+  background-color: #222;
+}
+.about .three article {
+  display: flex;
+  margin-top: 67px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .three article .div {
+  width: 40vw;
+  max-width: 575px;
+  background-color: #1f2324;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+.about .three article .div header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+  border-bottom: none;
+  align-items: normal;
+}
+.about .three article .div header .infonet {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 82px;
+}
+.about .three article .div header .infonet .head_C {
+  color: #fcea4e;
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0px;
+  line-height: 40px;
+  letter-spacing: 0.48px;
+}
+.about .three article .div header .infonet span {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+.about .three article .div p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.about .four {
+  background-color: #fcea4e;
+  display: flex;
+  padding: 65px 120px;
+  max-width: 1440px;
+  margin-top: 67px;
+  justify-content: space-between;
+}
+.about .four p {
+  background-color: #111314;
+  padding: 45px 0;
+  max-width: 144px;
+  text-align: center;
+  width: 10vw;
+}
+.about .four p img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 36px;
+  height: 36px;
+}
+.about .five {
+  width: 85vw;
+  margin: auto;
+  max-width: 1040px;
+  margin-top: 150px;
+}
+.about .five #span {
+  color: #fcea4e;
+  font-family: Raleway;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+.about .five h6 {
+  margin-top: 33px;
+  font-size: 50px;
+  margin-bottom: 71px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.about .five .cool {
+  align-items: flex-start;
+}
+.about .five article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .five article .diver {
+  width: 36vw;
+  height: 277px;
+  max-width: 575px;
+  background-color: #1f2324;
+  padding: 40px;
+  border-bottom: 2px solid #fcea4e;
+  margin-bottom: 30px;
+  transition: all 0.4s;
+}
+.about .five article .diver .question {
+  font-size: 27px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.27px;
+}
+.about .five article .diver .question .cursor {
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+.about .five article .diver .question .cursor:hover {
+  opacity: 0.67;
+}
+.about .five article .diver .question .cursor .MuiSvgIcon-root {
+  pointer-events: none;
+}
+.about .five article .diver .special {
+  margin-bottom: 49px;
+}
+.about .five article .diver .answer,
+.about .five article .diver .response {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.4s;
+  letter-spacing: 0.16px;
+}
+.about .five article .q-1 .question .cursor .MuiSvgIcon-root, .about .five article .q-2 .question .cursor .MuiSvgIcon-root {
+  transform: rotateZ(180deg);
+}
+.about .five article .q-3, .about .five article .q-4 {
+  height: 130px;
+}
+.about .five article .q-3 .answer, .about .five article .q-4 .answer {
+  display: none;
+}
+.about .five article .q-3 .question {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1190px) {
+  .about .five article .diver .answer,
+  .about .five article .diver .response {
+    max-width: 336px;
+  }
+  .about .five article .q-1 .question {
+    margin-bottom: 60px;
+  }
+  .about .five article .q-3 .question {
+    margin-bottom: 35px;
+  }
+  .about .five article .q-4 .question {
+    margin-bottom: 60px;
+  }
+  .about .five article .diver {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1189px) {
+  .about .two article p {
+    max-width: 430px;
+  }
+  .about .four p {
+    padding: 30px 0px;
+  }
+  .about .five article .diver .answer,
+  .about .five article .diver .response {
+    max-width: 336px;
+  }
+  .about .five article .q-1 .question {
+    margin-bottom: 60px;
+  }
+  .about .five article .q-3 .question {
+    margin-bottom: 35px;
+  }
+  .about .five article .q-4 .question {
+    margin-bottom: 60px;
+  }
+  .about .five article .diver {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .one img {
+    bottom: 70px;
+  }
+  .about .two aside {
+    width: 100vw;
+  }
+  .about .two aside img {
+    width: 31.5vw;
+  }
+  .about .two article {
+    flex-direction: column;
+  }
+  .about .two article p {
+    width: 76vw;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .about .two article .e_2 {
+    order: 2;
+  }
+  .about .two article .e_3 {
+    order: 3;
+  }
+  .about .three article {
+    flex-direction: column;
+  }
+  .about .three article .div {
+    width: 80vw;
+    max-width: 856px;
+  }
+  .about .three article .div header .infonet span {
+    font-size: 24px;
+  }
+  .about .three article .div p {
+    max-width: 406px;
+  }
+  .about .four {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about .four p {
+    max-width: 260px;
+    margin-right: 2.2vw;
+    margin-bottom: 10px;
+    width: 20vw;
+  }
+  .about .five {
+    margin-top: 88px;
+  }
+  .about .five span {
+    font-size: 24px;
+  }
+  .about .five h6 {
+    max-width: 430px;
+    line-height: 54px;
+    margin-top: 26px;
+  }
+  .about .five article {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .about .five article .diver {
+    width: 73vw;
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about .one {
+    margin-top: 27px;
+    min-height: 50px;
+  }
+  .about .one span {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .about .one img {
+    bottom: 30px;
+  }
+  .about .two {
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 30px;
+  }
+  .about .two aside {
+    min-height: 150px;
+  }
+  .about .two aside img {
+    width: 32.5vw;
+  }
+  .about .two article {
+    width: 88vw;
+    margin-top: 25px;
+  }
+  .about .two article p {
+    width: 82vw;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about .three h5 {
+    font-size: 9px;
+    padding: 10px 13px;
+    margin-bottom: 25px;
+  }
+  .about .three article {
+    margin-top: 32px;
+  }
+  .about .three article .div {
+    width: 83vw;
+    padding: 12px 21px;
+  }
+  .about .three article .div header {
+    width: 75vw;
+    padding-right: 15px;
+  }
+  .about .three article .div header .infonet {
+    margin-bottom: 30px;
+  }
+  .about .three article .div header .infonet .head_C {
+    font-size: 24px;
+  }
+  .about .three article .div header .infonet span {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 4px;
+  }
+  .about .three article .div header .date {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .about .three article .div p {
+    max-width: 150px;
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .about .four {
+    padding: 27px 31px;
+    margin-top: 30px;
+  }
+  .about .four p {
+    width: 25vw;
+  }
+  .about .five {
+    margin-top: 48px;
+  }
+  .about .five #span {
+    font-size: 15px;
+  }
+  .about .five span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .about .five h6 {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 198px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+  }
+  .about .five article .diver {
+    width: 82vw;
+    padding: 18px 24px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .about .five article .diver .question {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 29px;
+  }
+  .about .five article .diver .response,
+  .about .five article .diver .answer {
+    font-size: 9px;
+    line-height: 13px;
+  }
+  .about .five article .q-3 .question {
+    margin-bottom: 18px;
+  }
+}/*# sourceMappingURL=About.css.map */

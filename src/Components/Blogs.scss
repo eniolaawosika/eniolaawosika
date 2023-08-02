@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "itc_avant_garde_gothic_stdBk";
+  src: url("../itc_avant_garde_gothic_std_book-webfont.woff2") format("woff2"),
+    url("../itc_avant_garde_gothic_std_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.blog {
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  .one {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    min-height: 500px;
+    animation: fader 0.4s linear forwards 0.3s;
+    span {
+      text-align: center;
+      font-size: 150px;
+      font-family: "ITC Avant Garde Gothic Std", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    img {
+      object-fit: contain;
+      width: 52vw;
+      max-width: 719px;
+      position: relative;
+      bottom: 100px;
+    }
+  }
+  .two {
+    width: 84vw;
+    margin: auto;
+    max-width: 1206px;
+    .follow_me {
+      border-radius: 30px;
+      border: 2px solid #fff;
+      padding: 15px 48px;
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.4s;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.21px;
+      &:hover {
+        opacity: 0.67;
+      }
+    }
+    h5 {
+      margin-bottom: 64px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+    article {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+      div {
+        width: 27vw;
+        max-width: 386px;
+        background-color: #1f2324;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        img {
+          object-fit: contain;
+          max-width: 386px;
+          width: 27vw;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+        aside {
+          display: flex;
+          flex-direction: column;
+          padding: 24px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          //   padding-top: 50px
+          h2 {
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 28px;
+            margin-bottom: 15px;
+          }
+          span {
+            color: #fff283;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 15px;
+          }
+          p {
+            max-width: 238px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.15px;
+            margin-bottom: 10px;
+          }
+          a {
+            color: #fcea4e;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.28px;
+            text-decoration: none;
+            transition: opacity 0.4s;
+            &:hover {
+              opacity: 0.67;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:'1189px') and (min-width:'1024px') {
+  .blog{
+    .two{
+      article{
+        div{
+          aside{
+            height:330px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "1024px") {
+  .blog {
+    .one {
+      min-height: 200px;
+      img {
+        bottom: 75px;
+      }
+    }
+    .two {
+      .follow_me{
+        font-size: 16px;
+        padding: 15px 30px;
+      }
+      article {
+        flex-direction: column;
+        margin-bottom: 33px;
+        div {
+          width: 83vw;
+          max-width: 1000px;
+          img {
+            width: 83vw;
+            max-width: 1000px;
+          }
+          aside {
+            p {
+              max-width: 449px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "500px") {
+  .blog {
+    .one {
+      margin-top: 27px;
+      min-height: 50px;
+      span {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 500;
+      }
+      img {
+        bottom: 30px;
+      }
+    }
+    .two {
+      width: 88vw;
+      .follow_me{
+        font-size: 10px;
+        font-weight: 500;
+      }
+      h5 {
+        margin-bottom: 35px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 21px;
+      }
+      article {
+        margin-bottom: 3px;
+        div {
+          width: 88vw;
+          img {
+            width: 88vw;
+          }
+          aside {
+            h2 {
+              font-size: 16px;
+              margin-bottom: 2px;
+            }
+            span {
+              font-size: 10px;
+              margin-bottom: 5px;
+            }
+            p {
+              font-size: 9px;
+              line-height: 12px;
+              margin-bottom: 5px;
+            }
+            a {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

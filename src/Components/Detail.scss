@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "itc_avant_garde_gothic_stdBk";
+  src: url("../itc_avant_garde_gothic_std_book-webfont.woff2") format("woff2"),
+    url("../itc_avant_garde_gothic_std_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.detail {
+  color: white;
+  opacity: 0;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+  animation: fader 0.6s linear forwards;
+  .one {
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto 96px;
+    border-bottom: 2px solid white;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    aside {
+      width: 38vw;
+      max-width: 550px;
+    }
+    .left {
+      h1 {
+        max-width: 520px;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 104px;
+        margin-bottom: 80px;
+      }
+      .roll {
+        margin-bottom: 45px;
+      }
+      div {
+        display: flex;
+        .highlight {
+          border-bottom: 1px solid white;
+        }
+        p,.tools {
+          width: 190px;
+          padding-bottom: 32px;
+          display: flex;
+          flex-direction: column;
+          margin-right: 30px;
+          article {
+            display: flex;
+            flex-direction: column;
+            :last-child {
+              &::after {
+                margin-left: 1px;
+                content: "";
+              }
+            }
+            span {
+              margin-right: 7px;
+              margin-bottom: 8px;
+              &::after {
+                margin-left: 1px;
+                content: ",";
+              }
+            }
+          }
+          span {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.16px;
+          }
+          .big {
+            color: #fcea4e;
+            font-size: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+    .right {
+      font-family: "ITC Avant Garde Gothic Std", sans-serif;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+      display: flex;
+      flex-direction: column;
+      p{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    max-width: 1200px;
+    margin: auto;
+    img,video {
+      object-fit: fill;
+      width: inherit;
+      margin-top: 32px;
+    }
+    h2,
+    p {
+      text-align: center;
+      padding: 0px 150px;
+      margin-bottom: 40px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.24px;
+      margin-top: 80px;
+      margin-bottom: 30px;
+    }
+  }
+  .footer {
+    width: 85vw;
+    max-width: 1200px;
+    min-height: 30px;
+    margin: 53px auto 0;
+    .next {
+      float: right;
+    }
+    span {
+      font-size: 21px;
+      background-color: #222222;
+      font-weight: 600;
+      cursor: pointer;
+      line-height: 21px;
+      transition: opacity 0.4s;
+      padding: 8px 27px;
+      &:hover{
+        opacity: 0.67;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "1115px") {
+  .detail {
+    .one {
+      .left {
+        h1 {
+          font-size: 72px;
+          line-height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "900px") {
+  .detail {
+    .one {
+      flex-direction: column;
+      .right {
+        width: 83vw;
+        margin-top: 64px;
+        max-width: max-content;
+        font-size: 16px;
+      }
+      .left {
+        h1 {
+          margin-bottom: 61px;
+          font-size: 90px;
+        }
+        div {
+          flex-direction: column;
+          p,.tools {
+            width: 84vw;
+            margin-bottom: 20px;
+            border-bottom: 1px solid white;
+            article {
+              flex-direction: row;
+              :last-child {
+                &::after {
+                  margin-left: 1px;
+                  content: "";
+                }
+              }
+              span {
+                margin-right: 7px;
+                &::after {
+                  margin-left: 1px;
+                  content: ",";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .two {
+      p,h2{
+        padding: 0 50px;
+      }
+    }
+    .footer{
+        span{
+            font-size: 16px;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: "500px") {
+  .detail {
+    .one {
+      margin: 0 auto 33px;
+      padding: 30px 0;
+      .left {
+        h1 {
+          font-size: 34px;
+          margin-bottom: 33px;
+          width: max-content;
+          line-height: 40px;
+        }
+        div {
+          p {
+            padding-bottom: 15px;
+          }
+        }
+        .roll {
+          margin-bottom: 7px;
+        }
+      }
+      .right {
+        margin-top: 25px;
+        font-size: 11px;
+        line-height: 22px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .two {
+      img,video {
+       
+        margin-top: 12px;
+      }
+      h2,
+      p {
+        padding: 0 22px;
+      }
+    }
+    .footer{
+        span{
+            padding: 8px 14px;
+        }
+    }
+  }
+}

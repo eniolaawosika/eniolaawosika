@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "itc_avant_garde_gothic_stdBk";
+  src: url("../itc_avant_garde_gothic_std_book-webfont.woff2") format("woff2"),
+    url("../itc_avant_garde_gothic_std_book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.work {
+  max-width: 1440px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: fader 0.6s linear forwards;
+  .one {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    min-height: 500px;
+    animation: fader 0.4s linear forwards 0.3s;
+    span {
+      text-align: center;
+      font-size: 150px;
+      font-family: "ITC Avant Garde Gothic Std", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    img {
+      object-fit: contain;
+      width: 52vw;
+      max-width: 719px;
+      position: relative;
+      bottom: 100px;
+    }
+  }
+  .text {
+    max-width: 1200px;
+    width: 85vw;
+    margin: auto;
+    font-family: "ITC Avant Garde Gothic Std", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    margin-bottom: 72px;
+  }
+  .two {
+    width: 85vw;
+    max-width: 1200px;
+    margin: auto;
+    .header {
+      display: flex;
+      margin: none;
+      margin-bottom: 50px;
+      span {
+        margin-right: 36px;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.7);
+        transition: color 0.4s, opacity 0.4s;
+        &:hover {
+          opacity: 0.67;
+        }
+      }
+      .active {
+        color: white;
+      }
+    }
+    .brands {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      transition: opacity 0.4s linear;
+      a {
+        width: 42vw;
+        max-width: 582px;
+        height: 362px;
+        margin-bottom: 30px;
+        position: relative;
+        box-shadow: 5px -10px 18px grey inset;
+        img {
+          width: 42vw;
+          height: 362px;
+          max-width: 582px;
+          object-fit: fill;
+          box-shadow: 5px 10px 18px grey inset;
+        }
+        aside {
+          display: flex;
+          position: absolute;
+          bottom: 50px;
+          opacity: 0;
+          flex-direction: column;
+          padding-left: 43px;
+          transition: opacity 0.4s;
+          .color {
+            color: #fcea4e;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+          }
+          .big {
+            font-size: 27px;
+            color: white;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 111.111% */
+            letter-spacing: 0.27px;
+          }
+        }
+      }
+      a::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 160px;
+        z-index: 2;
+        content: "";
+        opacity: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgb(33, 32, 32)
+        );
+        transition: opacity 0.4s;
+
+      }
+      a:hover{
+        &:after{
+          opacity: 1;
+        }
+        aside{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: "1189px") {
+  .work {
+    .two {
+      .brands {
+        a {
+          height: 312px;
+          img {
+            height: 312px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: "1024px") {
+  .work {
+    .one {
+      min-height: 400px;
+      img {
+        bottom: 70px;
+      }
+    }
+
+    .text {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+  }
+}
+@media screen and (max-width: "800px") {
+  .work {
+    .two {
+      .brands {
+        flex-direction: column;
+        a {
+          width: 84vw;
+          max-width: 800px;
+          height: 372px;
+          img {
+            width: 84vw;
+            max-width: 800px;
+            height: 372px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "500px") {
+  .work {
+    .one {
+      margin-top: 27px;
+      min-height: 50px;
+      span {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 500;
+      }
+      img {
+        bottom: 30px;
+      }
+    }
+    .text {
+      font-size: 10px;
+      line-height: 13px;
+      margin-bottom: 44px;
+    }
+    .two {
+      .header {
+        span {
+          margin-right: 12px;
+          font-size: 10px;
+        }
+      }
+      .brands {
+        a {
+          height: 202px;
+          margin-bottom: 13px;
+          &:after{
+            height:85px;
+          }
+          img {
+            height: 202px;
+            object-fit: ccover;
+          }
+          aside{
+            bottom: 10px;
+            padding-left: 15px;
+            .color{
+              font-size: 10px;
+              line-height: 5px;
+            }
+            .big{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
